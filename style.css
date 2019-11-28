@@ -1,6 +1,6 @@
 body {
     position: relative;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #000;
     font-size: 20px;
 }
@@ -18,11 +18,12 @@ header {
     margin-top: 3%;
     display: flex;
     justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
 }
 
-.grid {
+.net {
     list-style: none;
-    margin-left: 40px;
+    margin-left: 35px;
 }
 
 .gc {
@@ -98,6 +99,15 @@ header {
     color: #000000;
     background: #cfe2f3;
     border: 1px solid #000;
+}
+
+.buttonWithText>img {
+    position: absolute;
+    top: 170px;
+    left: 80%;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
 }
 
 ul.nacc {
