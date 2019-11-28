@@ -5,13 +5,13 @@ body {
     font-size: 20px;
 }
 
-.title {
-    margin-right: 3%;
-}
-
 img {
     height: 100px;
     width: 100px;
+}
+
+.title {
+    margin-right: 3%;
 }
 
 header {
@@ -19,6 +19,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 
 .net {
@@ -31,7 +32,7 @@ header {
     display: inline-block;
     margin-right: -.25em;
     min-height: 1px;
-    padding-left: 0px;
+    padding-left: 0;
     vertical-align: top;
 }
 
@@ -50,7 +51,7 @@ header {
 }
 
 .products .menu div {
-    padding: 15px 20px 15px 40px;
+    padding: 15px 40px;
     color: #000000;
     background: #cee2f2;
     cursor: pointer;
@@ -89,7 +90,7 @@ header {
 .products .menu div.active {
     color: rgb(0, 0, 0);
     background-color: #d9d2e8;
-    padding: 15px 20px 15px 20px;
+    padding: 15px 30px;
     border: none;
 }
 
