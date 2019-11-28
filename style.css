@@ -5,13 +5,13 @@ body {
     font-size: 20px;
 }
 
+.title {
+    margin-right: 3%;
+}
+
 img {
     height: 100px;
     width: 100px;
-}
-
-.title {
-    margin-right: 3%;
 }
 
 header {
@@ -26,7 +26,7 @@ header {
     margin-left: 35px;
 }
 
-.gc {
+.block {
     box-sizing: border-box;
     display: inline-block;
     margin-right: -.25em;
@@ -57,9 +57,12 @@ header {
     position: relative;
     vertical-align: middle;
     font-weight: 700;
-    -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-    border: 1px solid #000;
+    -webkit-transition: 2s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 2s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    border: 1.2px solid #000;
+    -moz-transition: 2s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    -ms-transition: 2s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: 2s all cubic-bezier(0.085, 0.82, 0.165, 1);
 }
 
 .products .menu div span.light {
