@@ -1,0 +1,147 @@
+$colorOfTextBlock: #cfe2f3;
+$black: #000000;
+$light: #fff;
+$font:'Roboto',
+sans-serif;
+body {
+    position: relative;
+    font-family: $font;
+    color: $black;
+    font-size: 20px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.title {
+    margin-right: 3%;
+}
+
+header {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.grid {
+    list-style: none;
+    margin-left: 40px;
+}
+
+.gc {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: -.25em;
+    min-height: 1px;
+    padding-left: 0px;
+    vertical-align: top;
+}
+
+.items {
+    width: 33.33333%;
+    font-family: $font;
+}
+
+.textBlock {
+    width: 66.66666%;
+    font-family: $font;
+}
+
+.products {
+    position: relative;
+    max-width: 900px;
+    margin: 100px auto 0;
+}
+
+.products .menu div {
+    padding: 15px 20px 15px 40px;
+    color: $black;
+    background: $colorOfTextBlock;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    font-weight: 700;
+    -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    border: 1px solid $black;
+}
+
+.products .menu div span.light {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 24px;
+    left: 15px;
+    background-color: $colorOfTextBlock;
+    border-radius: 100%;
+    -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.products .menu div.active span.light {
+    background-color: $black;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    border-radius: 0;
+}
+
+.products .menu div.active {
+    color: $black;
+    background-color: #d9d2e8;
+    padding: 15px 20px 15px 20px;
+    border: none;
+}
+
+.footer {
+    height: 17px;
+    display: flex;
+    padding: 10px;
+    align-items: flex-end;
+    justify-content: center;
+    color: $black;
+    background: $colorOfTextBlock;
+    border: 1px solid $black;
+}
+
+ul.nacc {
+    position: relative;
+    height: 0px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nacc li {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    position: absolute;
+    list-style: none;
+    -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: #d9d2e9;
+    padding: 5%;
+    height: 50.2vh;
+    border-top: 1px solid $black;
+    border-right: 1px solid $black;
+    border-bottom: 1px solid $black;
+}
+
+ul.nacc li.active {
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+    z-index: 2;
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+ul.nacc li p {
+    margin: 0;
+}
